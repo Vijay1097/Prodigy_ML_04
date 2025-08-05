@@ -35,102 +35,91 @@ This project implements a *Hand Gesture Recognition System* using real images co
 
 ## 🛠 Installation
 
-```bash
+bash
 pip install mediapipe opencv-python scikit-learn numpy matplotlib requests pillow beautifulsoup4 seaborn
 
 
 ---
 
-📁 Directory Structure
+## 📁 Directory Structure
 
-├── model/
-│   └── gesture_classifier.pkl       # Trained model (optional)
-├── images/
-│   ├── 1_sample.png                 # Sample prediction for gesture "1"
-│   └── hi_sample.png                # Sample prediction for gesture "hi"
+
 ├── recognizer.py                    # Core implementation
+├── gesture 1 output.jpg             # Sample output for gesture "1"
+├── gesture Hi output.jpg            # Sample output for gesture "hi"
 └── README.md
 
 
 ---
 
-📸 Sample Output (Visual)
+## 📸 Sample Output (Visual)
 
-➕ Gesture: 1
+### ➕ Gesture: 1
 
-<img src=(https://github.com/Vijay1097/Prodigy_ML_04/blob/main/gesture%201%20output.jpg) alt="Gesture 1 Prediction" width="400"/>Prediction: 1
-Confidence: 96.3%
+![Gesture 1](https://github.com/Vijay1097/Prodigy_ML_04/blob/main/gesture%201%20output.jpg)
 
-
----
-
-👋 Gesture: hi
-
-<img src=(https://github.com/Vijay1097/Prodigy_ML_04/blob/main/gesture%20Hi%20output.jpg) width="400"/>Prediction: hi
-Confidence: 91.5%
-
+*Prediction*: 1  
+*Confidence*: ~96.3%
 
 ---
 
-🧪 Testing Options
+### 👋 Gesture: hi
 
-test_single_image() → Upload your own hand gesture image
+![Gesture Hi](https://github.com/Vijay1097/Prodigy_ML_04/blob/main/gesture%20Hi%20output.jpg)
 
-test_training_images() → Run evaluation on training/test data
-
-Mode 1: Random test
-
-Mode 2: Choose specific gesture
-
-Mode 3: Test all gestures
-
-Mode 4: Interactive browse
-
-
-
+*Prediction*: hi  
+*Confidence*: ~91.5%
 
 ---
 
-📊 Model Performance
+## 🧪 Testing Options
 
-Metric	Value
+- test_single_image() → Upload your own hand gesture image  
+- test_training_images() → Run evaluation on training/test data  
+  - Mode 1: Random test  
+  - Mode 2: Choose specific gesture  
+  - Mode 3: Test all gestures  
+  - Mode 4: Interactive browse
 
-Training Accuracy	~92%
-Testing Accuracy	~87%
+---
 
+## 📊 Model Performance
+
+| Metric            | Value     |
+|-------------------|-----------|
+| Training Accuracy | ~92%      |
+| Testing Accuracy  | ~87%      |
 
 Confusion Matrix and Classification Report are plotted and printed post-training.
 
+---
+
+## 🔍 How it Works
+
+1. *Image Collection*: Downloads real hand gesture images from multiple online sources using keyword search.
+2. *Landmark Extraction*: MediaPipe extracts 21 hand landmark positions (x, y, z).
+3. *Fallback Data*: If real images are missing, synthetic patterns fill the gap using finger-tip templates.
+4. *Model Training*: Random Forest trained with noise-injected data to simulate realistic performance.
+5. *Prediction*: For any input image, landmarks are extracted and classified into one of six gestures.
 
 ---
 
-🔍 How it Works
+## 🧑‍💻 Author
 
-1. Image Collection: Downloads real hand gesture images from multiple online sources using keyword search.
-
-
-2. Landmark Extraction: MediaPipe extracts 21 hand landmark positions (x, y, z).
-
-
-3. Fallback Data: If real images are missing, synthetic patterns fill the gap using finger-tip templates.
-
-
-4. Model Training: Random Forest trained with noise-injected data to simulate realistic performance.
-
-
-5. Prediction: For any input image, landmarks are extracted and classified into one of six gestures.
-
-
-
+*Comillas Negras – Task 05*  
+Food & Gesture Recognition AI Challenge
 
 ---
 
-✅ Future Work
+## ✅ Future Work
 
-✨ Extend to dynamic gestures or video input
+- ✨ Extend to dynamic gestures or video input  
+- 📦 Deploy as a Web or Mobile App  
+- 🔤 Multi-language gesture classification  
+- 🥗 Integrate with calorie tracking for food-hand gestures
 
-📦 Deploy as a Web or Mobile App
+---
 
-🔤 Multi-language gesture classification
+## 📬 Contact
 
-🥗 Integrate with calorie tracking for food-hand gestures
+Feel free to open issues or contribute via pull requests.
