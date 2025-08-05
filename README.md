@@ -58,7 +58,7 @@ pip install mediapipe opencv-python scikit-learn numpy matplotlib requests pillo
 
 ➕ Gesture: 1
 
-<img src="https://github.com/Vijay1097/Prodigy_ML_04/blob/main/gesture%201%20output.jpg" alt="Gesture 1 Prediction" width="400"/>Prediction: 1
+<img src=("https://github.com/Vijay1097/Prodigy_ML_04/blob/main/gesture%201%20output.jpg") alt="Gesture 1 Prediction" width="400"/>Prediction: 1
 Confidence: 96.3%
 
 
@@ -66,7 +66,7 @@ Confidence: 96.3%
 
 👋 Gesture: hi
 
-<img src="https://github.com/Vijay1097/Prodigy_ML_04/blob/main/gesture%20Hi%20output.jpg" width="400"/>Prediction: hi
+<img src=("https://github.com/Vijay1097/Prodigy_ML_04/blob/main/gesture%20Hi%20output.jpg") width="400"/>Prediction: hi
 Confidence: 91.5%
 
 
