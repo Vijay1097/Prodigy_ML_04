@@ -57,6 +57,8 @@ pip install mediapipe opencv-python scikit-learn numpy matplotlib requests pillo
 📸 Sample Output (Visual)
 
 ➕ Gesture: 1
+(https://github.com/Vijay1097/Prodigy_ML_04/blob/main/gesture%201%20output.jpg)
+
 
 <img src="images/1_sample.png" alt="Gesture 1 Prediction" width="400"/>Prediction: 1
 Confidence: 96.3%
@@ -119,17 +121,6 @@ Confusion Matrix and Classification Report are plotted and printed post-training
 
 
 5. Prediction: For any input image, landmarks are extracted and classified into one of six gestures.
-
-
-
-
----
-
-🧑‍💻 Author
-
-Comillas Negras – Task 05
-Food & Gesture Recognition AI Challenge
-
 
 ---
 
